@@ -12,7 +12,7 @@ def quicksort(arr):
     left_sorted = []
     right_sorted = []
     
-    # Criando threads para ordenar as sublistas
+    # Criando ara ordenar as sublistas
     left_thread = threading.Thread(target=lambda: left_sorted.extend(quicksort(left)))
     right_thread = threading.Thread(target=lambda: right_sorted.extend(quicksort(right)))
     
